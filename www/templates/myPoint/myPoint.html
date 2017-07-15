@@ -1,0 +1,26 @@
+<ion-view view-title="headings">
+    <ion-content>
+
+
+
+
+    <label class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input  style="border-bottom:none !important;" type="search" placeholder="Search"  ng-model="filters.menuItem" id="searchBar"  >    
+    </label>
+
+
+ <div class="list item-text-wrap" id="staggered-test">
+     <!-- <div class="card item item-avatar">
+      <img src ="{{selectedNews.urlToImage}}" > 
+   </div> -->
+      <a class="item item-icon-right" ng-repeat="article in articles | filter: filters.menuItem"
+        ui-sref="app.profile({selectedItem:article})" onclick="Materialize.showStaggeredList('#staggered-test')">
+        {{article.title}}
+        <i class="icon ion-chevron-right font-18 red-color"></i></a>
+    </div>
+
+
+        
+    </ion-content>
+</ion-view>

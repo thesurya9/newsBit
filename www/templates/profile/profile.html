@@ -1,0 +1,21 @@
+<ion-view view-title="News Bit">
+  <ion-content>
+    <div class="item-text-wrap">
+      <div class="item">
+        <h2>{{selectedNews.title}}</h2>
+      </div>
+      
+      <div class="item item-body">
+        <img class="full-image" src="{{selectedNews.urlToImage}}">
+        <p>
+          {{selectedNews.description}}
+        </p>
+         <p>
+           <a ui-sref="app.review({selectedItem:selectedNews.url})" >Visit Website </a>
+        </p> 
+      </div>
+
+    </div>
+
+  </ion-content>
+</ion-view>
