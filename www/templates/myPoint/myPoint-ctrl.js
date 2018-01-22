@@ -5,18 +5,11 @@ angular.module('desieat.myPointCtrl', ['desieat.myPoints-service'])
     $scope.$on('$ionicView.enter', function () {
       console.log("mypoints Loaded");
 
-
       $scope.filters = {
         menuItem: ""
       };
 
       $scope.getMyPoints();
-
-
-
-      
-
-
     })
 
 
