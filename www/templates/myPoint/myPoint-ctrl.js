@@ -13,6 +13,10 @@ angular.module('desieat.myPointCtrl', ['desieat.myPoints-service'])
       $scope.getMyPoints();
 
 
+
+      
+
+
     })
 
 
